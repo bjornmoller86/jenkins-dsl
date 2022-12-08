@@ -14,7 +14,7 @@ void createPipeline(it) {
     pipelineJob(jobname) {
         description(desc)
          parameters {
-             choiceParam('myParameterName', ['option 1 (default)', 'option 2', 'option 3'], 'my description')
+             choiceParam('mina val', ['val 1 (default)', 'val igen 2', 'denharda 3'], 'my description')
         }
         definition {
             cpsScm {
