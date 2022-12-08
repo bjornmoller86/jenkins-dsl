@@ -13,7 +13,9 @@ void createPipeline(it) {
     def desc = it.description
     pipelineJob(jobname) {
         description(desc)
-
+         parameters {
+             choiceParam('myParameterName', ['option 1 (default)', 'option 2', 'option 3'], 'my description')
+        }
         definition {
             cpsScm {
                 scm {
